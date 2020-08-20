@@ -19,7 +19,7 @@ export class PostResolver {
     @Arg('title') title: string,
     @Ctx() { em }: MyContext
   ): Promise<Post> {
-    const post = await em.create(Post, { title });
+    const post = em.create(Post, { title });
     await em.persistAndFlush(post);
     return post;
   }
