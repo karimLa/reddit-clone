@@ -1,3 +1,10 @@
+import NabBar from '../components/NabBar';
+
 export default function Index() {
-  return <div>Hello World</div>;
+  return (
+    <>
+      <NabBar />
+      <div>hello World</div>
+    </>
+  );
 }
